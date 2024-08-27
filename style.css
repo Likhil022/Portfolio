@@ -11,6 +11,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-bottom: #1a1a1a 0.1px solid;
+    width: 100vw;
 }
 .nav ul {
     display: flex;
@@ -35,12 +37,13 @@
 }
 /* herosection */
 .hero{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     padding-bottom: 2.7rem;
 }
 
 .bio{
+    width: 40vw;
     margin: 80px;
     margin-left: 110px;
     margin-top: 50px;
@@ -81,9 +84,11 @@
     width:100%;
 }
 .aboutme{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    gap: 40px;
     padding-top: 5em;
     padding-bottom: 5em;
     width: 100vw;
@@ -94,15 +99,20 @@
 .about_text{
     margin-left: 100px;
     margin: 0px 50px 60px 100px;
+    width: 40%;
 }
 .about_text h3, .about_skills h3{
     font-size: 28px;
 }
 .skills{
     display: flex;
+    flex-wrap: wrap;
     margin: 2rem;
     margin-left: 0;
     gap: 30px;
+}
+.about_skills{
+    padding-left: 10vw;
 }
 .tech{
     fill: white;
@@ -212,5 +222,30 @@ svg.tech{
     border-color: white;
     color: white;
     transform: scale(1.03);
+}
+
+/* services */
+#services{
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 5vw;
+}
+
+.service{
+    margin-left: 45%;
+    font-weight: 600;
+    font-size: 28px; 
+    margin-bottom: 1rem;   
+}
+.ser_des{
+    margin-left: 46.23%;
+    margin-top: 0.5rem;
+}
+.service_frontEnd,.service_backEnd{
+    background-color: #242424;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    
 }
 
