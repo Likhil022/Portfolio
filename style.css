@@ -41,6 +41,9 @@
     flex-wrap: wrap;
     padding-bottom: 2.7rem;
 }
+a{
+    cursor: pointer;
+}
 
 .bio{
     width: 40vw;
@@ -261,7 +264,7 @@ svg.tech{
     text-decoration: none;
     color: #fff;
     padding-left: 1vw;
-    margin-top: ;
+    margin-top:10px ;
 }
 .offer{
     display: flex;
