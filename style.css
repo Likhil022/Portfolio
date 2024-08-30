@@ -5,14 +5,39 @@
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+/* scroll bar */
+:root{
+    --scrollbar-track-color: #242424;
+    --scrollbar-thumb-color: #676767;
+}
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 1rem;
+    border-radius: 0rem;
+    background-color: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 0.5rem;
+}
+
+
 
 /* navBar */
 .nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border-bottom: #1a1a1a 0.1px solid;
-    width: 100vw;
+    border-bottom: #fff 0.1px solid;
+    width: 100%;
+    background-color: #20211A;
+    color: #fff;
 }
 .nav ul {
     display: flex;
@@ -28,6 +53,8 @@
 .nav ul a{
     text-decoration: none;
     color: black;
+    background-color: #20211A;
+    color: #fff;
 
 }
 .nav ul a:visited{
@@ -40,6 +67,9 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 2.7rem;
+    background-color: #20211A;
+    color: #fff;
+    width: 100%;
 }
 a{
     cursor: pointer;
@@ -77,8 +107,8 @@ a{
 
 /* about me */
 #about{
-    background-color:#1a1a1a;
-    color: white;
+    background-color: #20211A;
+    color: #fff;
     
 }
 .aboutMe{
@@ -90,11 +120,10 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     gap: 40px;
     padding-top: 5em;
     padding-bottom: 5em;
-    width: 100vw;
     margin-left: 0;
     margin-right: 0;
     
@@ -158,6 +187,8 @@ svg.tech{
 .qualification{
     padding:10vw;
     padding-top: 5vw;
+    background-color:#20211A ;
+    color: white;
 }
 .qualification h1{
     font-size: 2.5em;
@@ -174,7 +205,7 @@ svg.tech{
 .qual_head{
     font-size: 25px;
     font-weight: 600;
-    border-bottom: #1a1a1a 1px solid;
+    border-bottom: #fff 1px solid;
     padding-bottom: 0.7em;
     margin-top: 1em;
 }
@@ -194,11 +225,11 @@ svg.tech{
     font-weight: 350;
 }
 .profesional{
-    border-bottom: #1a1a1a 1px solid;
+    border-bottom: #fff 1px solid;
     margin-bottom: 50px;
 }
 .education{
-    border-bottom: #1a1a1a 1px solid;
+    border-bottom: #fff 1px solid;
     
     padding-bottom: 5px;
 }
@@ -213,23 +244,23 @@ svg.tech{
 }
 .resume a{
     text-decoration: none;
-    color: #000;
-    border: #1a1a1a 1.7px solid;
+    color: #fff;
+    border: #fff 1.7px solid;
     padding: 1.17rem 2.9rem;
     width: 10rem;
     font-weight: 500;
     transition: background-color 1s ease, transform 0.3s ease;
 }
 .resume a:hover{
-    background-color: #1a1a1a;
-    border-color: white;
-    color: white;
+    background-color: #fff;
+    border-color: #1a1a1a;
+    color: #1a1a1a;
     transform: scale(1.03);
 }
 
 /* services */
 #services{
-    background-color: #1a1a1a;
+    background-color: #20211A;
     color: #fff;
     padding: 5vw;
 }
