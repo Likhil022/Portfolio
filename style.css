@@ -33,9 +33,10 @@ html, body {
 .nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     border-bottom: #fff 0.1px solid;
     width: 100%;
+    padding-left: 8rem;
     background-color: #20211A;
     color: #fff;
 }
@@ -55,12 +56,33 @@ html, body {
     color: black;
     background-color: #20211A;
     color: #fff;
+    text-align: center;
 
+}
+.nav ul li {
+    padding-top: 3%;
 }
 .nav ul a:visited{
     text-decoration: none;
     color: black;
-    
+}
+/* .nav_min{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.nav_min  */
+li{
+    list-style: none;
+    color: #fff;
+}
+.nav_min ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: flex-end;
+    padding-right: 2rem;
 }
 /* herosection */
 .hero{
@@ -70,9 +92,40 @@ html, body {
     background-color: #20211A;
     color: #fff;
     width: 100%;
+
 }
 a{
     cursor: pointer;
+}
+.nav_ham svg{
+    fill: white;
+    width: 28px;
+    height: 28px;
+    /* margin-top: 0.5rem; */
+}
+.nav_hide{
+    display: none;
+}
+.ham_close svg{
+    position: absolute;
+    background-color: #20211A;
+    fill: white;
+    height: 30px;
+    width: 30px;
+    margin: 1rem;
+    cursor: pointer;
+}
+.nav_min{
+    /* display: none; */
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* display: none; */
+    background-color: #242424;
+    height: 100vh;
+    opacity: 0.9;
+
 }
 
 .bio{
