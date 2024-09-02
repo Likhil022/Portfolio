@@ -19,6 +19,21 @@ scroll(navSer,service);
 scroll(navproj,projects);
 scroll(navtouch,touch);
 
+const navHomes = document.querySelector(".nav_homes");
+const navAbouts = document.querySelector(".nav_abouts");
+const navQuals = document.querySelector(".nav_quals");
+const navSers = document.querySelector(".nav_services");
+const navprojs = document.querySelector(".nav_projectss");
+const navtouchs = document.querySelector(".nav_touchs");
+
+scroll(navHomes,hero);
+scroll(navAbouts,about);
+scroll(navQuals,qualification);
+scroll(navSers,service);
+scroll(navprojs,projects);
+scroll(navtouchs,touch);
+
+
 
 function scroll(nav_button,section_id){
     nav_button.addEventListener("click",function(e){
