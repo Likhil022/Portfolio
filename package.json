@@ -2,5 +2,8 @@
   "dependencies": {
     "react-router": "^6.28.0",
     "react-router-hash-link": "^2.4.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
