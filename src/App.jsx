@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import AboutMe from "./components/AboutMe";
 
 function App() {
   useEffect(() => {
@@ -36,6 +37,7 @@ function App() {
         <section className="relative h-screen">
           <div className="px-36 flex flex-col justify-center items-center">
             <HeroSection />
+            <AboutMe />
           </div>
         </section>
 
