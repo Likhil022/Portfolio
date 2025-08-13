@@ -8,10 +8,19 @@ const HeroSection = () => {
   return (
     <>
       <section className="relative h-screen ">
-        <div className="flex basis-full justify-evenly gap-5">
+        <div className="flex basis-full justify-evenly gap-5 pl-10">
           <div className="left w-[70%] z-10 flex flex-col gap-3 justify-center items-left h-screen">
             <p className="text-4xl font-semibold text-white">Hello, I'm</p>
-            <h3 className="text-5xl font-semibold text-white">Likhil Kosuru</h3>
+            <motion.h3
+              id="hero-name"
+              layoutId="site-name"
+              style={{
+                transition: "font-size 0.3s ease",
+              }}
+              className="text-5xl font-semibold text-white"
+            >
+              Likhil Kosuru
+            </motion.h3>
             <p className="text-2xl">Full Stack Developer</p>
             <p>
               Designing and developing responsive, interactive web experiences
