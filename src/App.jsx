@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -42,12 +43,12 @@ function App() {
   return (
     <>
       {/* Cursor Glow */}
-      <div
+      {/* <div
         id="cursor-glow"
         className="pointer-events-none fixed w-12 h-12 rounded-full bg-[#43aaf4]
                    shadow-[0_0_645px_rgba(8,112,184,1)] opacity-100 transition-all
                    duration-75 blur-3xl z-50"
-      ></div>
+      ></div> */}
 
       {/* Navbar */}
       <Navbar show={showNavbar} />
@@ -59,10 +60,11 @@ function App() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="text-white"
       >
-        <section className="relative h-screen">
+        <section className="relative h-full">
           <div className="px-36 flex flex-col justify-center items-center">
             <HeroSection scrollY={scrollY} />
             <AboutMe />
+            <Skills />
           </div>
         </section>
       </motion.div>
