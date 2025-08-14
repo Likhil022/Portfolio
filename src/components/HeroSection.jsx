@@ -7,7 +7,7 @@ import AMB from "../assets/AMB.jpg";
 const HeroSection = () => {
   return (
     <>
-      <section className="relative h-screen ">
+      <section className="relative h-screen w-full">
         <div className="flex basis-full justify-evenly gap-5 pl-10">
           <div className="left w-[70%] z-10 flex flex-col gap-3 justify-center items-left h-screen">
             <p className="text-4xl font-semibold text-white">Hello, I'm</p>

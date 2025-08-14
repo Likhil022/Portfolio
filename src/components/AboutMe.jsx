@@ -1,16 +1,27 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="py-20 px-14">
+    <section id="about" className="py-20 px-14 w-full">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
         {/* Left Side - Heading */}
-        <div className="text-left">
+        <motion.div
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4 }}
+        >
           <h2 className="text-3xl font-bold text-blue-500 mt-14">About Me</h2>
-        </div>
+        </motion.div>
 
         {/* Right Side - Content */}
-        <div className="md:col-span-2 text-white text-lg leading-relaxed opacity-80 text-justify scale-90">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, dealy: 1.2 }}
+          className="md:col-span-2 text-white text-lg leading-relaxed opacity-80 text-justify scale-90"
+        >
           <p>
             I'm a dedicated{" "}
             <span className="underline-hover">Full Stack Developer</span>{" "}
@@ -43,7 +54,7 @@ const AboutMe = () => {
             project requirements, ensuring flexibility and efficiency in
             development.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

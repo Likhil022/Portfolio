@@ -1,5 +1,4 @@
-/* eslint-disable no-undef */
-import React from "react";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 
 const skillCategories = [
@@ -51,14 +50,16 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 pl-14 pr-12 w-full text-gray-200">
+    <section
+      id="skills"
+      className="py-20 px-14 w-full text-gray-200 overflow-x-hidden"
+    >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[150px_1fr] gap-40 items-start">
         {/* Left column - Skills tag */}
         <motion.div
-          initial={{ opacity: 0, y: -8 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.4, dealy: 1 }}
           className="text-left flex items-start justify-start"
         >
           <h2 className="text-3xl font-bold text-blue-500 rotate-0 mt-10 md:rotate-0">
@@ -71,7 +72,12 @@ export default function Skills() {
           {/* Top row: MERN & Java side by side */}
           <div className="grid grid-cols-2 gap-6">
             {/* MERN Stack */}
-            <div className="bg-blue-900/30 rounded-xl p-6">
+            <motion.div
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, dealy: 1 }}
+              className="bg-blue-900/30 rounded-xl p-6"
+            >
               <h3 className="text-lg font-semibold mb-3 text-blue-300">
                 {skillCategories[0].title}
               </h3>
@@ -89,10 +95,15 @@ export default function Skills() {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
 
             {/* Java Full Stack */}
-            <div className="bg-red-900/30 rounded-xl p-4">
+            <motion.div
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.4, dealy: 1 }}
+              className="bg-red-900/30 rounded-xl p-4"
+            >
               <h3 className="text-lg font-semibold mb-3 text-red-300">
                 {skillCategories[1].title}
               </h3>
@@ -110,11 +121,16 @@ export default function Skills() {
                   </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Bottom row: DevOps & Tools full width */}
-          <div className="bg-green-900/30 rounded-xl p-6 h-fit">
+          <motion.div
+            initial={{ opacity: 0, x: -200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, dealy: 1 }}
+            className="bg-green-900/30 rounded-xl p-6 h-fit"
+          >
             <h3 className="text-lg font-semibold mb-3 text-green-300">
               {skillCategories[2].title}
             </h3>
@@ -132,7 +148,7 @@ export default function Skills() {
                 </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

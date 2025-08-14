@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -64,6 +65,7 @@ function App() {
           <div className="px-36 flex flex-col justify-center items-center">
             <HeroSection scrollY={scrollY} />
             <AboutMe />
+            <Experience />
             <Skills />
           </div>
         </section>
