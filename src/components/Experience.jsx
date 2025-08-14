@@ -50,7 +50,7 @@ export default function Experience() {
                 initial={{ opacity: 0, y: +100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7 }}
-                className={`absolute -left-[2.5rem] w-8 h-8 rounded-full flex items-center justify-center ring-4 ring-gray-900 bg-${exp.color}-500`}
+                className={`absolute -left-[2.5rem] w-8 h-8 rounded-full flex items-center justify-center ring-4 ring-gray-900 bg-blue-500`}
               >
                 {index + 1}
               </motion.span>

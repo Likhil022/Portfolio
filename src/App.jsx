@@ -61,7 +61,7 @@ function App() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         className="text-white"
       >
-        <section className="relative h-full">
+        <section className="relative h-full w-full">
           <div className="px-36 flex flex-col justify-center items-center">
             <HeroSection scrollY={scrollY} />
             <AboutMe />

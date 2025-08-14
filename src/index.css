@@ -18,3 +18,8 @@ body {
       hover:after:w-full cursor-pointer;
   }
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
